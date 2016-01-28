@@ -7,8 +7,8 @@
     <ProjectGuid>{6FAEE3FB-1318-46B9-9621-46D047C9C57A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsFormsApp</RootNamespace>
-    <AssemblyName>WindowsFormsApp</AssemblyName>
+    <RootNamespace>FirstWindowsFormsAppFirstWindowsFormsApp</RootNamespace>
+    <AssemblyName>FirstWindowsFormsApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
