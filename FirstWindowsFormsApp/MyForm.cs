@@ -29,6 +29,7 @@ namespace FirstWindowsFormsApp
             button.Width = 200;
             button.Text = "Click Me";
             Controls.Add(button);
+            button.Click += Button_Click;
 
             label = new Label();
             label.Left = 25;
@@ -36,6 +37,11 @@ namespace FirstWindowsFormsApp
             label.Width = 200;
             label.Text = "Label";
             Controls.Add(label);
-        }   
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            label.Text = textBox.Text;
+        }
     }
 }
