@@ -12,7 +12,8 @@ namespace FirstWindowsFormsApp
         public static void Main()
         {
             MyForm form = new MyForm();
-            Application.Run(form);
+            MyDesignerForm myDesignerForm = new MyDesignerForm();
+            Application.Run(myDesignerForm);
         }
     }
 }

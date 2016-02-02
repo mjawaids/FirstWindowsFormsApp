@@ -7,7 +7,7 @@
     <ProjectGuid>{6FAEE3FB-1318-46B9-9621-46D047C9C57A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FirstWindowsFormsAppFirstWindowsFormsApp</RootNamespace>
+    <RootNamespace>FirstWindowsFormsApp</RootNamespace>
     <AssemblyName>FirstWindowsFormsApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -39,6 +39,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyDesignerForm.Designer.cs">
+      <DependentUpon>MyDesignerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -46,7 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyDesignerForm.resx">
+      <DependentUpon>MyDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
